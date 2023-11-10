@@ -20,7 +20,16 @@ select count(*)from u168183796_qawonder.chat_users where create_staff_id=1
 
 #Query02
 #Database üzerinden students tablosundaki firstname= Brian ve lastname= Kohlar olan öğrencinin
-  #email bilgisinin brain@gmail.com olduğunu doğrulayınız.]]></console>
+  #email bilgisinin brain@gmail.com olduğunu doğrulayınız.
+
+select exam, AVG(passing_percentage)from u168183796_qawonder.onlineexam group by exam;
+
+#Database üzerinden transport_feemaster tablosundaki
+ # month degeri 'October' olan kaydın
+  #fine_amount değerini '200.00' olarak güncellenebilmeli.
+  
+  update u168183796_qawonder.transport_feemaster set fine_amount = 200.00 where month='October'; 
+  select *from u168183796_qawonder.transport_feemaster;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
