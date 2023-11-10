@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
                 "rerun:target/failedRerun.txt"
+
         },
         features = "src/test/resources",
         glue = {"stepDefinitions"},
